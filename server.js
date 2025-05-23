@@ -14,7 +14,6 @@ const placeholderRoutes = require('./routes/placeholder');
 const productRecommendationRoutes = require('./routes/ai/product-recommendation');
 const SearchSuggestions = require('./routes/ai/search-suggestions');
 
-
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -32,9 +31,13 @@ const logger = winston.createLogger({
   ],
 });
 
-// CORS Configuration
+// CORS Configuration for Railway
 const corsOptions = {
-  origin: ['http://localhost:5173', 'http://127.0.0.1:5173'], // Frontend URLs
+  origin: [
+    'http://localhost:5173', // Frontend URL in development
+    'http://127.0.0.1:5173', // Localhost variant
+    'https://backend.railway.internal' // Internal Railway backend URL
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: [
     'Origin', 
@@ -42,7 +45,7 @@ const corsOptions = {
     'Content-Type', 
     'Accept', 
     'Authorization',
-    'Cache-Control',
+    'Cache-Control', 
     'cache-control'
   ],
   credentials: true,

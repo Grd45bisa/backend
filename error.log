@@ -1,0 +1,4 @@
+{"level":"error","message":"Error fetching sentiment statistics: PlanExecutor error during aggregation :: caused by :: $objectToArray requires a document input, found: string","timestamp":"2025-05-05T14:41:29.471Z"}
+{"level":"error","message":"Error fetching sentiment statistics: PlanExecutor error during aggregation :: caused by :: $objectToArray requires a document input, found: string","timestamp":"2025-05-05T14:41:29.619Z"}
+{"level":"error","message":"Error fetching sentiment statistics: PlanExecutor error during aggregation :: caused by :: $objectToArray requires a document input, found: string","timestamp":"2025-05-05T14:41:55.877Z"}
+{"level":"error","message":"Error fetching sentiment statistics: PlanExecutor error during aggregation :: caused by :: $objectToArray requires a document input, found: string","timestamp":"2025-05-05T14:41:56.051Z"}
